@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página de Regalos Iluminados</title>
   <style>
     body {
@@ -15,16 +15,19 @@
       padding: 40px;
       animation: fadeIn 2s ease-in;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     .gift-container {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
       justify-content: center;
     }
+
     .gift-box {
       position: relative;
       background-color: #222;
@@ -39,9 +42,11 @@
       flex-direction: column;
       align-items: center;
     }
+
     .gift-box:hover {
       transform: scale(1.05);
     }
+
     .gift-box img {
       width: 100%;
       height: auto;
@@ -49,17 +54,20 @@
       object-fit: cover;
       border-radius: 10px;
     }
+
     .gift-title {
       margin-top: 10px;
       font-size: 1.2em;
       font-weight: bold;
     }
+
     .delivery-section {
       margin-top: 20px;
       padding-top: 10px;
       border-top: 1px solid #444;
       width: 100%;
     }
+
     .styled-date,
     .styled-note {
       background: #2a2a2a;
@@ -75,17 +83,20 @@
       text-align: center;
       transition: all 0.2s;
     }
+
     .styled-date:hover,
     .styled-note:hover {
       border-color: #00bfff;
       box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
     }
+
     .delivery-section label {
       display: block;
       margin-top: 10px;
       font-size: 0.95em;
       text-align: left;
     }
+
     .mark-complete {
       position: absolute;
       top: 10px;
@@ -101,9 +112,11 @@
       box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
       transition: 0.2s;
     }
+
     .mark-complete:hover {
       background: #ff0000;
     }
+
     .gift-box.completed {
       opacity: 0.4;
       pointer-events: none;
@@ -114,154 +127,158 @@
   <h1>🎁 Página de Regalos Iluminados</h1>
 
   <div class="gift-container">
-<div class="gift-box" id="box10">
-  <button class="mark-complete" onclick="completar('box10')">×</button>
-  <img src="Cupón de besos, abrazos y mimos.png" alt="Cupón de besos, abrazos y mimos">
-  <div class="gift-title">Cupónes</div>
-  <div class="delivery-section">
-    <label for="fecha10">📅 Fecha de entrega:</label>
-    <input type="date" class="styled-date" id="fecha10" name="fecha10">
-    <label for="nota10">📝 Nota:</label>
-    <textarea id="nota10" name="nota10" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
-  </div>
-</div>   
-
-       <div class="gift-box" id="box10">
-      <button class="mark-complete" onclick="completar('box10')">×</button>
-      <img src="kit para dias grises.png" alt="Kit para días grises">
-      <div class="gift-title">Kit para días grises</div>
+    
+    <div class="gift-box" id="box1">
+      <button class="mark-complete" onclick="completar('box1')">×</button>
+      <img src="Cupón de besos, abrazos y mimos.png" alt="Cupón de besos, abrazos y mimos">
+      <div class="gift-title">Cupónes</div>
       <div class="delivery-section">
-        <label for="fecha10">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha10" name="fecha10">
-        <label for="nota10">📝 Nota:</label>
-        <textarea id="nota10" name="nota10" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <label for="fecha1">📅 Fecha de entrega:</label>
+        <input type="date" class="styled-date" id="fecha1">
+        <label for="nota1">📝 Nota:</label>
+        <textarea id="nota1" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
-
-    <div class="gift-box" id="box11">
-      <button class="mark-complete" onclick="completar('box11')">×</button>
-      <img src="Puzzle personalizado ideas.png" alt="Puzzle Siempre Juntos">
-      <div class="gift-title">Puzzle “Siempre Juntos”</div>
-      <div class="delivery-section">
-        <label for="fecha11">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha11" name="fecha11">
-        <label for="nota11">📝 Nota:</label>
-        <textarea id="nota11" name="nota11" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
-      </div>
-    </div>
-
 
     <div class="gift-box" id="box2">
       <button class="mark-complete" onclick="completar('box2')">×</button>
-      <img src="mapa espacial.png" alt="Mapa de estrellas">
-      <div class="gift-title">Mapa de estrellas</div>
+      <img src="kit para dias grises.png" alt="Kit para días grises">
+      <div class="gift-title">Kit para días grises</div>
       <div class="delivery-section">
         <label for="fecha2">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha2" name="fecha2">
+        <input type="date" class="styled-date" id="fecha2">
         <label for="nota2">📝 Nota:</label>
-        <textarea id="nota2" name="nota2" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota2" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box3">
       <button class="mark-complete" onclick="completar('box3')">×</button>
-      <img src="medusa.png" alt="Techo de medusa">
-      <div class="gift-title">Panel / Techo de medusa</div>
+      <img src="Puzzle personalizado ideas.png" alt="Puzzle Siempre Juntos">
+      <div class="gift-title">Puzzle “Siempre Juntos”</div>
       <div class="delivery-section">
         <label for="fecha3">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha3" name="fecha3">
+        <input type="date" class="styled-date" id="fecha3">
         <label for="nota3">📝 Nota:</label>
-        <textarea id="nota3" name="nota3" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota3" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box4">
       <button class="mark-complete" onclick="completar('box4')">×</button>
-      <img src="agenda.png" alt="Agenda con mensaje positivo">
-      <div class="gift-title">Cuaderno con amor</div>
+      <img src="mapa espacial.png" alt="Mapa de estrellas">
+      <div class="gift-title">Mapa de estrellas</div>
       <div class="delivery-section">
         <label for="fecha4">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha4" name="fecha4">
+        <input type="date" class="styled-date" id="fecha4">
         <label for="nota4">📝 Nota:</label>
-        <textarea id="nota4" name="nota4" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota4" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box5">
       <button class="mark-complete" onclick="completar('box5')">×</button>
-      <img src="caga de ragalo con mariposa.png" alt="Caja con mariposas">
-      <div class="gift-title">Caja mágica con mariposas</div>
+      <img src="medusa.png" alt="Techo de medusa">
+      <div class="gift-title">Panel / Techo de medusa</div>
       <div class="delivery-section">
         <label for="fecha5">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha5" name="fecha5">
+        <input type="date" class="styled-date" id="fecha5">
         <label for="nota5">📝 Nota:</label>
-        <textarea id="nota5" name="nota5" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota5" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box6">
       <button class="mark-complete" onclick="completar('box6')">×</button>
-      <img src="caja con luces.png" alt="Caja con luces">
-      <div class="gift-title">Caja cálida iluminada</div>
+      <img src="agenda.png" alt="Agenda con mensaje positivo">
+      <div class="gift-title">Cuaderno con amor</div>
       <div class="delivery-section">
         <label for="fecha6">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha6" name="fecha6">
+        <input type="date" class="styled-date" id="fecha6">
         <label for="nota6">📝 Nota:</label>
-        <textarea id="nota6" name="nota6" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota6" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box7">
       <button class="mark-complete" onclick="completar('box7')">×</button>
-      <img src="caja de los 5 sentidos.png" alt="Caja 5 sentidos">
-      <div class="gift-title">Caja de los 5 sentidos</div>
+      <img src="caga de ragalo con mariposa.png" alt="Caja con mariposas">
+      <div class="gift-title">Caja mágica con mariposas</div>
       <div class="delivery-section">
         <label for="fecha7">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha7" name="fecha7">
+        <input type="date" class="styled-date" id="fecha7">
         <label for="nota7">📝 Nota:</label>
-        <textarea id="nota7" name="nota7" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota7" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box8">
       <button class="mark-complete" onclick="completar('box8')">×</button>
-      <img src="carta con luces.png" alt="Carta con luces">
-      <div class="gift-title">Carta luminosa</div>
+      <img src="caja con luces.png" alt="Caja con luces">
+      <div class="gift-title">Caja cálida iluminada</div>
       <div class="delivery-section">
         <label for="fecha8">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha8" name="fecha8">
+        <input type="date" class="styled-date" id="fecha8">
         <label for="nota8">📝 Nota:</label>
-        <textarea id="nota8" name="nota8" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <textarea id="nota8" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
     <div class="gift-box" id="box9">
       <button class="mark-complete" onclick="completar('box9')">×</button>
+      <img src="caja de los 5 sentidos.png" alt="Caja 5 sentidos">
+      <div class="gift-title">Caja de los 5 sentidos</div>
+      <div class="delivery-section">
+        <label for="fecha9">📅 Fecha de entrega:</label>
+        <input type="date" class="styled-date" id="fecha9">
+        <label for="nota9">📝 Nota:</label>
+        <textarea id="nota9" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+      </div>
+    </div>
+
+    <div class="gift-box" id="box10">
+      <button class="mark-complete" onclick="completar('box10')">×</button>
+      <img src="carta con luces.png" alt="Carta con luces">
+      <div class="gift-title">Carta luminosa</div>
+      <div class="delivery-section">
+        <label for="fecha10">📅 Fecha de entrega:</label>
+        <input type="date" class="styled-date" id="fecha10">
+        <label for="nota10">📝 Nota:</label>
+        <textarea id="nota10" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+      </div>
+    </div>
+
+    <div class="gift-box" id="box11">
+      <button class="mark-complete" onclick="completar('box11')">×</button>
       <img src="poemas.png" alt="Frasco de poemas mágicos">
       <div class="gift-title">Frasco de poemas mágicos</div>
       <div class="delivery-section">
-        <label for="fecha9">📅 Fecha de entrega:</label>
-        <input type="date" class="styled-date" id="fecha9" name="fecha9">
-        <label for="nota9">📝 Nota:</label>
-        <textarea id="nota9" name="nota9" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
+        <label for="fecha11">📅 Fecha de entrega:</label>
+        <input type="date" class="styled-date" id="fecha11">
+        <label for="nota11">📝 Nota:</label>
+        <textarea id="nota11" rows="2" class="styled-note" placeholder="Escribí una dedicatoria..."></textarea>
       </div>
     </div>
 
   </div>
 
   <script>
-
-    const campos = Array.from({length: 9}, (_, i) => [`fecha${i+1}`, `nota${i+1}`]).flat();
-
-    campos.forEach(id => {
-      const elem = document.getElementById(id);
-      if (elem) {
-        elem.value = localStorage.getItem(id) || "";
-        elem.addEventListener("input", () => {
-          localStorage.setItem(id, elem.value);
+    for (let i = 1; i <= 11; i++) {
+      const fecha = document.getElementById(`fecha${i}`);
+      const nota = document.getElementById(`nota${i}`);
+      if (fecha) {
+        fecha.value = localStorage.getItem(`fecha${i}`) || "";
+        fecha.addEventListener("input", () => {
+          localStorage.setItem(`fecha${i}`, fecha.value);
         });
       }
-    });
+      if (nota) {
+        nota.value = localStorage.getItem(`nota${i}`) || "";
+        nota.addEventListener("input", () => {
+          localStorage.setItem(`nota${i}`, nota.value);
+        });
+      }
+    }
 
     function completar(boxId) {
       document.getElementById(boxId).classList.add("completed");
@@ -269,15 +286,13 @@
 
     function checkEntrega() {
       const hoy = new Date().toISOString().split("T")[0];
-      for (let i = 1; i <= 9; i++) {
+      for (let i = 1; i <= 11; i++) {
         const fecha = localStorage.getItem(`fecha${i}`);
         const nota = localStorage.getItem(`nota${i}`);
-        if (fecha === hoy) {
-          if (Notification.permission === "granted") {
-            new Notification("🎁 ¡Hoy se entrega un regalo!", {
-              body: nota ? `Nota: ${nota}` : `Revisá el regalo número ${i}`
-            });
-          }
+        if (fecha === hoy && Notification.permission === "granted") {
+          new Notification("🎁 ¡Hoy se entrega un regalo!", {
+            body: nota ? `Nota: ${nota}` : `Revisá el regalo número ${i}`
+          });
         }
       }
     }
